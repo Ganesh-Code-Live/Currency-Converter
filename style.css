@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  padding: 0 10px;
+}
+::selection{
+  color: #fff;
+  background: #675AFE;
+}
+.container{
+  width: 370px;
+  padding: 30px;
+  border: 5px solid #64A5FF;
+  border-radius: 7px;
+  background: #007DFE;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+.container header{
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+}
+.container form{
+  margin: 40px 0 20px 0;
+}
+form :where(input, select, button){
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+form p{
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+form input{
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  background-color: #64A5FF;
+color: #fff;
+}
+form input:focus{
+  padding: 0 14px;
+  border: 2px solid #fff;
+}
+form .drop-list{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.drop-list .select-box{
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  background-color: #64A5FF;
+}
+.select-box img{
+  max-width: 21px;
+}
+.select-box select{
+  width: auto;
+  font-size: 16px;
+  background: none;
+  margin: 0 -5px 0 5px;
+  color: #fff;
+background-color: #64A5FF;
+}
+.select-box select::-webkit-scrollbar{
+  width: 8px;
+}
+.select-box select::-webkit-scrollbar-track{
+  background: #fff;
+}
+.select-box select::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+.drop-list .icon{
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 22px;
+  color: #ffffff;
+}
+form .exchange-rate{
+  font-size: 17px;
+  margin: 20px 0 30px;
+  color: #ffffff;
+}
+form button{
+  height: 52px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  background: #64A5FF;
+  transition: 0.3s ease;
+}
+form button:hover{
+  background: #fff;
+  color: black;
+}
+.image1 img{
+width: 500px;
+}
+.image2 img{
+  width: 500px;
+}
+
+/* RESPOSIVE From Here*/
+
+@media (max-width:779px) {
+    .image1 img{
+      display: none;
+    }
+    body{
+      justify-content: space-between;
+    }
+    .image2 img{
+      width: 400px;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+    }
+
+}
+@media (max-width:430px){
+  body{
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    padding-bottom: 15px;
+  }
+  .image2 img{
+    display: none;
+  }
+ 
+}
+@media (max-width:380px){
+
+.container header{
+font-size: 25px;
+}
+}
+@media (max-width:325px){
+.container{
+transform: scale(0.9);
+}
+.container header{
+font-size: 25px;
+}
+}
